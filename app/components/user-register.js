@@ -9,7 +9,6 @@ export default Ember.Component.extend({
 
 	actions: {
 		registerUser() {
-			console.log("config", this.get('email'));
       this.set('regResponse', false);
 			let ref = new Firebase(config.firebase);
       let _self = this;
