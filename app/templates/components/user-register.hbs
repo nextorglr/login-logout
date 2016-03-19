@@ -1,0 +1,19 @@
+<form>
+  {{input type="email" value=email required=true placeholder="example@fun.de" }}
+  <br>
+  {{input type="password" value=password required=true  placeholder="Your password" }}
+  <br>
+  <br>
+
+  <button {{action "registerUser"}}> Submit </button>
+</form>
+
+{{#if regResponse}}
+  {{#if regSuccess}}
+    user created!
+  {{else}}
+    something went wrong!
+  {{/if}}
+{{/if}}
+
+{{yield}}

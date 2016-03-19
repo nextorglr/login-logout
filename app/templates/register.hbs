@@ -1,8 +1,2 @@
+{{user-register}}
 {{outlet}}
-<form>
-{{input type="email" value=model.email required=true placeholder="example@fun.de" }}
-{{input type="password" value=model.password required=true  placeholder="Your password" }}
-{{input type="password"  value=repeatpassword required=true  placeholder="Repeat your password" }}
-
-<button {{action "registerUser"}}> Submit </button>
-</form>
